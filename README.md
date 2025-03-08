@@ -1,6 +1,6 @@
-# Welcome to My Portfolio
+# Batu Sensoy's Portfolio
 
-Hi there! I'm Batu Şensoy, currently pursuing a B.S. in Computer Science at Weber State University.  
+Hi there! I'm Batu Sensoy, currently pursuing a B.S. in Computer Science at Weber State University.  
 This repository serves as the foundation for my digital portfolio, showcasing my projects, coding skills, and technical achievements.
 
 ### Explore My Portfolio  
