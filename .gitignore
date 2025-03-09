@@ -1,0 +1,11 @@
+# Ignore build files and binaries
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.cache
+*.csproj.user
+.vs/
