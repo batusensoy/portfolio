@@ -3,50 +3,111 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background: #f4f4f4;
     color: #333;
-    text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation */
+header {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: #fff;
+    align-items: center;
 }
+
+    nav h1 a {
+        text-decoration: none;
+        color: #333;
+    }
 
     nav ul {
         list-style: none;
         display: flex;
         gap: 15px;
+        margin: 0;
+        padding: 0;
     }
 
-        nav ul li {
-            display: inline;
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
         }
 
-    nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
+            nav ul li a:hover {
+                color: #007bff;
+            }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+/* Sections */
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
 }
 
-    .button:hover {
+.intro {
+    background: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.projects .project,
+.experience .job,
+.education .education-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .skills ul li {
+        background: #fff;
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+    .btn:hover {
         background: #0056b3;
     }
 
-/* Dark Mode */
-.dark-mode {
-    background-color: #1e1e1e;
-    color: white;
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: ::contentReference[oaicite:9]
+
+{
+    index =9
 }
