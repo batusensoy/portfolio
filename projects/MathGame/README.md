@@ -1,13 +1,13 @@
-# WPF Math Game for Kids
+ï»¿# WPF Math Game for Kids
 
 ## Overview
 This is an interactive **math game** designed for young children, built using **WPF**.  
 The game features:
 - A **themed interface** with images and sounds suitable for children.
 - Three windows:  
-  1. **Main Menu Window** – User enters their information and selects a game type.  
-  2. **Game Window** – Displays math questions, tracks time, and provides feedback.  
-  3. **Final Score Window** – Shows game results and high scores.  
+  1. **Main Menu Window** â€“ User enters their information and selects a game type.  
+  2. **Game Window** â€“ Displays math questions, tracks time, and provides feedback.  
+  3. **Final Score Window** â€“ Shows game results and high scores.  
 - A **high score system** that keeps track of the top 10 scores.
 
 ---
@@ -42,7 +42,7 @@ The game features:
 
 ### **Final Score Window**
 - Displays:
-  - **User’s name and age**.
+  - **Userâ€™s name and age**.
   - **Number of correct and incorrect answers**.
   - **Total time taken** to complete the game.
 - Users can **return to the main menu** to start a new game.
