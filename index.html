@@ -1,15 +1,13 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
     <!-- Put your site title here -->
     <title>
-        Batu Sensoy | A Web Developer based in Lahore, Pakistan.
+        Batu Sensoy | Portfolio
     </title>
 
     <meta name="description" content="Add small description of yourslef.">
@@ -26,7 +24,7 @@
         <div class="row">
             <nav class="nav" role="navigation">
                 <ul class="nav__items">
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About</a>
@@ -44,7 +42,11 @@
                     <span>Batu Sensoy</span>
                 </h1>
                 <!-- Put a small paragraph about yourself -->
-                <p>A Web Developer based in Lahore, Pakistan.</p>
+                <p>
+                    Currently, I am attending Weber State University for a Bachelor's Degree in Computer Science and
+                    will
+                    graduate in April 2025.
+                </p>
                 <a href="#contact" class="btn btn--pink">Get in touch</a>
             </div>
         </div>
@@ -52,97 +54,130 @@
 
     <main role="main">
 
-        <!-- ***** Work ***** -->
+        <!-- ***** Projects ***** -->
 
-        <section class="work" id="work">
+        <section class="projects" id="projects">
             <div class="row">
-                <h2>My Work</h2>
-                <div class="work__boxes">
+                <h2>Projects</h2>
+                <div class="project__boxes">
 
-                    <!-- Each div with the work__box class is a project. -->
+                    <!-- Each div with the project__box class is a project. -->
 
-                    <div class="work__box">
-                        <div class="work__text">
-                            <h3>Portfolio Template</h3>
+                    <div class="project__box">
+                        <div class="project__text">
+                            <h3>Math Game</h3>
                             <p>
-                                A free Open Source Portfolio for anyone to use for free.
-                            </p>
-                            <ul class="work__list">
-                                <li>HTML</li>
-                                <li>SCSS</li>
-                                <li>JavaScript</li>
-                                <li>Parcel</li>
-                            </ul>
+                                Interactive Math Game with visuals and sounds designed for young children that makes
+                                learning math enjoyable.
 
-                            <div class="work__links">
-                                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
-                                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" alt="GitHub">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-                        </div>
-                    </div>
-
-                    <div class="work__box">
-                        <div class="work__text">
-                            <h3>Calculator</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                eius.
-                            </p>
-                            <ul class="work__list">
-                                <li>React</li>
-                                <li>Next.js</li>
-                                <li>Node</li>
-                                <li>MongoDB</li>
-                            </ul>
-
-                            <div class="work__links">
-                                <a href="#" class="link__text">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
+                            <div class="project__links">
+                                <!-- <a href="#" class="link__text">
+                                                        Visit Site <span>&rarr;</span>
+                                                    </a> -->
                                 <a href="#">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                                    <img src="./images/github.svg" class="project__code" title="View Source Code"
+                                        alt="GitHub">
                                 </a>
                             </div>
                         </div>
-                        <div class="work__image-box">
-                            <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+                        <div class="project__image-box">
+                            <img src="./images/MathGame.png" class="project__image" alt="MathGame" />
                         </div>
                     </div>
 
-                    <div class="work__box">
-                        <div class="work__text">
-                            <h3>Notificator</h3>
+                    <div class="project__box">
+                        <div class="project__text">
+                            <h3>Airline Reservation System</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                eius.
+                                The Airline Reservation System allows users to select flights, manage passengers, and
+                                modify seating arrangements
+                                through an interactive GUI.
                             </p>
-                            <ul class="work__list">
-                                <li>React</li>
-                                <li>Next.js</li>
-                                <li>Node</li>
-                                <li>MongoDB</li>
-                            </ul>
-
-                            <div class="work__links">
-                                <a href="#" class="link__text">
+                            <div class="project__links">
+                                <!-- <a href="https://nisar.surge.sh" target="_blank" class="link__text">
                                     Visit Site <span>&rarr;</span>
-                                </a>
-                                <a href="#">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                                </a> -->
+                                <a href="https://github.com/batusensoy/portfolio" title="View Source Code"
+                                    target="_blank">
+                                    <img src="./images/github.svg" class="project__code" alt="GitHub">
                                 </a>
                             </div>
                         </div>
-                        <div class="work__image-box">
-                            <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+                        <div class="project__image-box">
+                            <img src="./images/AirlineReservation.png" class="project__image" alt="Project 1" />
                         </div>
                     </div>
+
+                    <div class="project__box">
+                        <div class="project__text">
+                            <h3>Student Assignment Tracker</h3>
+                            <p>
+                                Student Assignment Tracker is a simple tool for managing student grades. It allows users
+                                to
+                                input and track assignment scores. Users can add assignments, update names, enter
+                                scores, and view grades, averages, and letter grades.
+                            </p>
+                            <div class="project__links">
+                                <!-- <a href="#" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a> -->
+                                <a href="#">
+                                    <img src="./images/github.svg" class="project__code" title="View Source Code"
+                                        alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__image-box">
+                            <img src="./images/Scores.png" class="project__image" alt="StudentScores" />
+                        </div>
+                    </div>
+
+                    <div class="project__box">
+                        <div class="project__text">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>
+                                Tic-Tac-Toe game lets two players compete with a clickable board, turn indicators, and
+                                automatic win/tie detection.
+                                It highlights the winning move, tracks scores, and supports multiple rounds.
+                            <div class="project__links">
+                                <!-- <a href="#" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a> -->
+                                <a href="#">
+                                    <img src="./images/github.svg" class="project__code" title="View Source Code"
+                                        alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__image-box">
+                            <img src="./images/TicTacToe.png" class="project__image" alt="TicTacToe" />
+                        </div>
+                    </div>
+
+                    <div class="project__box">
+                        <div class="project__text">
+                            <h3>Dice Guessing Game</h3>
+                            <p>
+                                Dice guessing game challenges users to predict the outcome of a six-sided dice roll.
+                            </p>
+
+                            <div class="project__links">
+                                <!-- <a href="#" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a> -->
+                                <a href="#">
+                                    <img src="./images/github.svg" class="project__code" title="View Source Code"
+                                        alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__image-box">
+                            <img src="./images/DieGuessGame.png" class="project__image" alt="DieGuessGame" />
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -184,7 +219,7 @@
 
                     <div class="about__photo-container">
                         <!-- Add a nice photo of yourself -->
-                        <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+                        <img class="about__photo" src="./images/" alt="" />
                     </div>
                 </div>
             </div>
@@ -234,20 +269,13 @@
                 </li>
                 <li class="footer__social-link-item">
                     <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-                        <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                        <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+                            alt="Linkedin">
                     </a>
                 </li>
             </ul>
 
-            <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-            <p>
-                &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-            </p>
-            <div class="footer__github-buttons">
-                <iframe src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-                        frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-                </iframe>
-            </div>
+
         </div>
     </footer>
 
