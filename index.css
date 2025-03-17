@@ -517,8 +517,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .skill__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+    height: 8rem;
+    max-width: 20rem;
 }
 
 @media(max-width: 1240px) {
@@ -596,12 +596,39 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.about__photo {
+    width: 350px;
+    /* Adjust size as needed */
+    height: 350px;
+    /* Maintain a circular shape */
+    border-radius: 50%;
+    /* Make it circular */
+    object-fit: cover;
+    /* Ensure the image fills the circle */
+    display: block;
+    /* Centering optimization */
+    margin: 0 auto;
+    /* Center the image */
+
+}
+
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
+.contact {
+    text-align: center;
+    /* Center all text inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact__info {
     max-width: var(--container-medium-width);
+    margin: 0 auto;
+    /* Centering the text block */
 }
 
 /* --------------------------------------- */
