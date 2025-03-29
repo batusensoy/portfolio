@@ -4,24 +4,27 @@ Hi there! I'm Batu Sensoy, currently pursuing a B.S. in Computer Science at Webe
 This repository serves as the foundation for my digital portfolio, showcasing my projects, coding skills, and technical achievements.
 
 ### Explore My Portfolio  
-[Live Portfolio Website](your-portfolio-link.com)
+[Live Portfolio Website](https://batusensoy.github.io/portfolio/)
 
 ---
 
 ## Featured Projects  
 Here are some of my notable projects:
 
-- [Project Name](GitHub Repo Link) – Brief description of the project  
-- [Project Name](GitHub Repo Link) – Brief description of the project  
-- [Project Name](GitHub Repo Link) – Brief description of the project  
+- [MathGame](https://github.com/batusensoy/portfolio/tree/main/projects/MathGame) – This is an interactive **math game** designed for young children, built using **WPF**. 
 
-For more projects, check out my [GitHub repositories](https://github.com/yourusername).
+- [AirlineReservation](https://github.com/batusensoy/portfolio/tree/main/projects/AirlineReservation) –  Allows users to select flights, manage passengers, and modify seating arrangements   
+
+- [StudentScores](https://github.com/batusensoy/portfolio/tree/main/projects/StudentScores) –  Application allows users to input and track students' assignment scores using arrays.
+
+- [TicTacToe](https://github.com/batusensoy/portfolio/tree/main/projects/TicTacToe) – Application that allows two players to play Tic-Tac-Toe.
+
+- [DieGuessGame](https://github.com/batusensoy/portfolio/tree/main/projects/DieGuessGame) – Guess the outcome of a six-sided dice roll.
 
 ---
 
 ## Connect With Me
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [github.com/batusensoy](https://github.com/batusensoy)
+- Email: batu.sensoy@gmail.com
 
 ---
