@@ -23,35 +23,39 @@
 }
 
 :root {
-    --font-size-small: 1.8rem;
-    --font-size-normal: 2.2rem;
-    --font-size-medium: 2.8rem;
-    --font-size-medium-1: 3.6rem;
-    --font-size-large: 5.5rem;
-    --font-size-huge: 7.5rem;
-    --font-stack: 'Hk Grotesk', sans-serif;
-
-    --line-height-normal: 1.7;
-    --line-height-small: 1.2;
-
-    --black: #000;
-    --pink: #ff3258;
-    --white: #f0e9f2;
-    --white-1: #e5e5e6da;
-
-
-    --container-max-width: 1180px;
-    --container-normal-width: 800px;
-    --container-medium-width: 700px;
-    --container-small-width: 500px;
-
-    --gutter-huge: 12rem;
-    --gutter-medium: 6rem;
-    --gutter-normal: 3rem;
-    --gutter-small-1: 2.5rem;
-    --gutter-small: 2rem;
-
-    --border-light: 1px solid rgb(36, 35, 35);
+    --black: #0f172a;
+        /* Tailwind's slate-900 */
+        --white: #f1f5f9;
+        /* Tailwind's slate-100 */
+        --white-1: #94a3b8;
+        /* Tailwind's slate-400 */
+        --accent: #38bdf8;
+        /* Tailwind's sky-400 */
+    
+        --font-size-small: 1.8rem;
+        --font-size-normal: 2.2rem;
+        --font-size-medium: 2.8rem;
+        --font-size-medium-1: 3.6rem;
+        --font-size-large: 5.5rem;
+        --font-size-huge: 7.5rem;
+    
+        --font-stack: 'Hk Grotesk', sans-serif;
+        --line-height-normal: 1.7;
+        --line-height-small: 1.2;
+    
+        --container-max-width: 1180px;
+        --container-normal-width: 800px;
+        --container-medium-width: 700px;
+        --container-small-width: 500px;
+    
+        --gutter-huge: 12rem;
+        --gutter-medium: 6rem;
+        --gutter-normal: 3rem;
+        --gutter-small-1: 2.5rem;
+        --gutter-small: 2rem;
+    
+        --border-light: 1px solid #334155;
+        /* slate-700 */
 }
 
 html {
@@ -72,9 +76,12 @@ body {
     font-family: var(--font-stack);
     font-weight: 400;
     color: var(--white-1);
+    /* Light gray text */
     line-height: var(--line-height-normal);
     background: var(--black);
+    /* Deep slate background */
     overflow-x: hidden;
+    cursor: default;
 }
 
 .row {
@@ -151,7 +158,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--accent);
     margin: var(--gutter-small) 0;
 }
 
@@ -202,7 +209,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--accent);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -211,54 +218,67 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--accent);
 }
 
+/* Base button */
 .btn {
     position: relative;
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: inherit;
-    border: 1px solid var(--pink);
     font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    color: var(--white);
+    border: 1px solid var(--accent);
+    background: transparent;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s cubic-bezier(1, 0.68, 0.16, 0.9),
+            color 0.3s cubic-bezier(1, 0.68, 0.16, 0.9);
+    cursor: pointer;
 }
 
+/* Hover/focus effect for .btn */
+.btn:hover,
 .btn:focus {
-    outline: none;
+    background-color: var(--accent);
+    color: var(--black);
 }
 
+/* Optional animated background slide-in effect */
 .btn::after {
     content: '';
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--white);
     height: 100%;
+    background: var(--accent);
     z-index: -1;
-    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: right 0.2s ease-in-out;
+    border-radius: 0.5rem;
 }
 
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
 }
 
-.btn--pink {
-    background: var(--pink);
-    transition: all 0.2s;
+/* Accent variant – no need for duplicated rules */
+.btn--accent {
+    background-color: var(--accent);
+    color: var(--black);
+    padding: 1rem 2rem;
+    border: none;
+    transition: background-color 0.3s cubic-bezier(1, 0.68, 0.16, 0.9),
+            color 0.3s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.btn--pink::after {
-    display: none;
-}
-
-.btn--pink:hover,
-.btn--pink:focus {
-    background: transparent;
+.btn--accent:hover,
+.btn--accent:focus {
+    background-color: #0ea5e9;
+    /* sky-500 */
+    color: var(--black);
 }
 
 .link__text {
@@ -267,7 +287,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--accent);
 }
 
 .link__text::after {
@@ -290,7 +310,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--accent);
 }
 
 .link__text span {
@@ -309,7 +329,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--accent);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -338,7 +358,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: var(--gutter-normal) 0;
 }
 
@@ -374,30 +394,27 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 0;
     text-decoration: none;
-    color: inherit;
-    transition: all .2s;
+    color: var(--white-1);
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: var(--accent);
 }
 
 .nav__link::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
     left: 0;
-    right: 100%;
-    display: inline-block;
-    height: 1rem;
-    background: var(--white);
-    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
-}
-
-.nav__link:hover {
-    color: var(--pink);
+    background-color: var(--accent);
+    transition: width 0.2s ease-in-out;
 }
 
 .nav__link:hover::after {
-    right: 0;
-    height: 2px;
-    background: var(--pink);
+    width: 100%;
 }
 
 /* --------------------------------------- */
@@ -405,8 +422,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),
-        url('./images/header.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4));
+        /* url('./images/header.jpg'); */
     height: 100vh;
     background-size: cover;
     background-position: center;
